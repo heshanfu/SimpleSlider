@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+    <title>Simple Slider Example</title>
+
+    <script src="javascript/jquery-1.12.3.min.js"></script>
+    <script src="javascript/jquery-ui.min.js"></script>
+    <script src="javascript/jquery.ui.touch-punch.min.js"></script>
+    <script src="javascript/jquery.simple-slider.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/simple-slider.css">
+
+    <style>
+        #comparison { 
+            margin-bottom: 50px;
+            width:725px;
+        }
+    </style>
+
+    <script>
+        $(document).ready( function() {
+            $('#comparison').simpleSlider();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="column-12">
+                <h1>Example of how to use SimpleSlider</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-12">
+                <h2>Step 1: Link required files</h2>
+                <pre>
+&lt;!-- jQuery --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;!-- jQuery UI --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"&gt;&lt;/script&gt;
+&lt;!-- jQuery UI Touch Punch --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"&gt;&lt;/script&gt;
+&lt;!-- SimpleSlider JS file --&gt;
+&lt;link href="jquery.simple-slider.js" rel="stylesheet" /&gt;
+&lt;!-- SimpleSlider CSS file --&gt;
+&lt;link href="simple-slider.css" rel="stylesheet" /&gt;</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-12">
+                <h2>Step 2: Create HTML Markup</h2>
+                <pre>
+&lt;div id="comparison"&gt;
+    &lt;img src="img/before.jpg"&gt;
+    &lt;img src="img/after.jpg"&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-12">
+                <h2>Step 3: Call SimpleSlider</h2>
+                <pre>
+$(document).ready( function() {
+    $('#comparison').simpleSlider();
+});</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-12">
+                <h2>Step 4: Output</h2>
+                <div id="comparison">
+                    <img src="img/before.jpg">
+                    <img src="img/after.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
